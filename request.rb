@@ -3,7 +3,7 @@ require 'net/http'
 require 'openssl'
 require 'json'
 
-def request(address,key) 
+def request(address, key) 
     url = URI(address+ key)  
     http = Net::HTTP.new(url.host, url.port)
     request = Net::HTTP::Get.new(url)  
@@ -14,7 +14,10 @@ def request(address,key)
     unless (response.code.to_i / 100) == 2 
         return nil
     else
-        return JSON.parse(response.read_bod) 
+        return JSON.parse(response.read_body) 
     end
 end
 
+#con este archivo resquest.rb se hace request a la API. 
+#estructura generica #luego de hacer todo lo 
+#anterior, tenemos lista la peticion y es hora de armar la pag
