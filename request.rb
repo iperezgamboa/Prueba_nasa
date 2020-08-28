@@ -20,4 +20,4 @@ end
 
 #con este archivo resquest.rb se hace request a la API. 
 #estructura generica #luego de hacer todo lo 
-#anterior, tenemos lista la peticion y es hora de armar la pag
+#anterior, esta lista la peticion y es hora de armar la pag
